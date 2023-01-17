@@ -1,0 +1,214 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.titulo{
+  display: inline-block;
+  justify-content: flex-start;
+  font-size: 30px;
+  width: 400px;
+  
+}
+
+
+
+.barraNav{
+
+  background-color: rgb(56, 1, 56);
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+  width: 100%;
+  height:80px;
+}
+
+
+.barraNav a{
+  color:white;
+  padding: 10px;
+  text-decoration: none;  
+  font-size: 20px;
+
+}
+
+.barraNav a:hover{
+  color:lightgreen;
+}
+
+.contenedorArticulos{
+  background-color: #4CAF50;
+  border: 2px solid white;
+  width:100%
+}
+
+.productoPrincipal{
+    width:250px;
+    height: 250px;
+    border:2px solid black;
+}
+
+
+
+.objeto{
+  width: 200px;
+  height: 80px;
+  align-items: flex-end;
+  display: flex;
+
+}
+.objeto img{
+  width:50px;
+  height: 50px;
+  margin: auto;
+  margin-left:-10px;
+}
+
+.objeto a{
+  color:black;
+  text-decoration: none;
+  background-color: white;
+  font-style: italic;
+  width: auto;
+  height: auto;
+  align-items: center;
+  margin: auto;
+}
+
+.objeto a:hover{
+  background-color: rgb(60, 255, 1);
+  color:black;
+}
+
+
+
+
+footer {
+  background-color: rgb(56, 1, 56);
+  display: block;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  color: white;
+  font-size: small;
+}
+
+.footerNav{
+  text-align: end;
+  width: 100%;
+  display: inline-block;
+  
+
+}
+
+.copy{
+  text-align: start; 
+}
+
+.botonComprar {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+button:hover{
+  box-shadow: 10px 10px 16px 0 rgba(255, 255, 255, 0.253), 0 6px 20px 0 rgba(233, 233, 233, 0.342);
+
+}
+
+.divProductos{
+  background-color: rgba(56, 1, 56, 0.74);
+  display: block;
+  width:45%;
+  text-align: center;
+  margin:50px auto 50px auto;
+  height: auto;
+  justify-content: center;
+  border: 3px solid white;
+  color: white;
+  box-shadow: 0 28px 26px 0 rgba(253, 253, 253, 0.2), 0 6px 20px 0 rgb(243, 242, 242);
+
+}
+
+.contenedorImagenDescripción{
+  display: flex;
+  align-items: center;
+  background-color: rgba(56, 1, 56, 0.74);
+  border: 2px solid white;
+
+}
+
+.imagenDelProducto{
+  width: 500px;
+  height: 550px;
+  font-size: medium;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.imagenDelProducto:hover{
+  box-shadow: 0 28px 26px 0 rgba(10, 10, 10, 0.2), 0 6px 20px 0 rgb(0, 0, 0);
+  display: inline;
+}
+
+.descripcionDelProducto{
+  text-align: center;  
+  height: 300px;
+  align-items: center;
+  display: flex;
+  color:white;
+  font-size: large;
+}
+
+.precioDelProducto {
+  color:white;
+}
+
+.verMas{
+  color: #4CAF50;
+  text-decoration: none;  
+  font-size: 15px;
+}
+
+.verMas:hover{
+  text-decoration: none;  
+  font-size: 15px;
+  color:rgb(107, 213, 255);
+
+}
+
+.tituloDelProducto{
+  color:white;
+  background-color: rgba(173, 10, 173, 0.74);
+  text-align: center;
+  font-size: 25px;
+  margin: 2px;
+  border: 2px solid white;
+}
