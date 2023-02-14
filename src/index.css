@@ -178,11 +178,10 @@ footer {
 
 .contenedorBotonComprar {
   text-align: center;
-  background-color: rgb(56, 1, 56);
-  border-left:1px solid white;
-  height: 10px;
-  margin-bottom: 200px;
-  margin-top:30px;
+  margin-bottom: auto;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .divProductos {
@@ -267,3 +266,202 @@ footer {
   font-size: 25px;
   margin: 2px;
   }
+
+  .cantidad-botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5em 0;
+  }
+  
+  .cantidad-boton {
+    padding: 0.5em 1em;
+    background-color: #e6e6e6;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .cantidad-boton:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+
+  .cantidad-medio {
+    margin:auto 50px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+    width: 20px;
+    color:black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+  }
+
+  .cantidad-medio-carrito{
+    font-size: 30px;
+    color:black;
+  }
+
+  .containercarrito {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.DivCarrito{
+  width: 100px;
+  height: 100px;
+}
+
+/*Carro*/
+
+.contenedorTarjeta {
+  width: 85%;
+  height: 400px;
+  margin: 10px auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #ccc;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  
+}
+
+.contenedorImg {
+  width: 40%;
+}
+
+.imagenTarjeta {
+  width: 100%;
+  height:auto;
+  max-height: 400px;
+}
+
+.textoTarjeta {
+  width: 70%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.contenedorEstadisticas {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.estadisticasTarjeta {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.contenedorBotones {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color:black;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.botonVaciarCarrito {
+  position: absolute;
+  bottom: 110px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: lightgray;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  border: 5px solid wheat;
+  padding: 20px 50px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.botonVaciarCarrito:hover {
+  background-color:   #ff6347;;
+  cursor: pointer;
+  }
+
+
+    
+.tituloProducto {
+    font-size: 56px;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+    
+.divCarritoGenerico {
+    width: 85%;
+    height: 400px;
+    margin: 10px auto;
+    background-color: rgb(68, 10, 68);
+    border-radius: 10px;
+    box-shadow: 5px 5px 9px #ccc;
+    color:white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    }
+
+.botonConfirmar {
+      background-color: #008CBA;
+      border: none;
+      color: #fff;
+      padding: 20px 50px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 26px;
+      margin: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+}
+    
+.botonConfirmar:hover {
+    background-color: #00415A;
+}
+    
+    
+    
+    
+    

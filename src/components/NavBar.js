@@ -1,7 +1,11 @@
+import { useContext } from "react"
 import { Link } from "react-router-dom"
-import { CartWidget } from "./CardWidget"
+import {CardWidget} from './CardWidget'
+import {contexto} from './CustomProvider'
 
 const NavBar = (props) =>{
+
+    const {totalProductos} = useContext(contexto)
 
     if (props.isHeader){
         return(
@@ -11,7 +15,7 @@ const NavBar = (props) =>{
                 <Link className="headerLink" to="/category/jewelery/">Joyeria</Link>
                 <Link className="headerLink" to="/category/men's clothing/">Hombres</Link>
                 <Link className="headerLink" to="/category/women's clothing/">Mujeres</Link>
-                <CartWidget/>
+                <CardWidget/>
 
             </nav>
             </>

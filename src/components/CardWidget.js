@@ -1,14 +1,20 @@
 import React from 'react'
 import { Link } from "react-router-dom"
+import { useCarrito } from './CustomProvider';
 
-export const CartWidget = () => {
+export const CardWidget = () => {
 
-  const isItem = true
+  const {totalProductos} = useCarrito()
 
   return (
-        <div class = "objeto">
-            <Link className="headerLink" to="/carrito/">Carrito</Link>
-           <img src="../img/carrito.png"></img>
-        </div>
-  )
-}
+    <div className="objeto">
+      <Link className="headerLink" to="/carrito">
+        Carrito {totalProductos}
+
+      </Link>
+      <img src="../img/carrito.png" alt="Carrito de compras" />
+    </div>
+  );
+};
+
+export default CardWidget;

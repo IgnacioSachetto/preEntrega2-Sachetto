@@ -57,8 +57,3 @@ const ItemListConteiner = () => {
 }
 
 export default ItemListConteiner
-//<><button onClick={handleClick} target="_blank" href={props.greeting}>Agregar</button>
-//<p>Cantidad: {contador}</p>
-//<p>Texto a Buscar: {searchText}</p>
-//<input onChange={handleOnChange} type="text"></input>
-//</>      

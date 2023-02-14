@@ -2,6 +2,7 @@ import React from 'react'
 import ItemListConteiner from './ItemListConteiner'
 import {Routes,Route} from "react-router-dom"
 import ItemDetailContainer from './ItemDetailContainer'
+import Carrito from './Carrito'
 
 export const Main = () => {
 
@@ -14,15 +15,8 @@ export const Main = () => {
            <Route path="/" element={<ItemListConteiner/>}/>
            <Route path="/category/:categoria" element={<ItemListConteiner/>}/>
            <Route path="/item/:id" element={<ItemDetailContainer/>}/>
+           <Route path='/carrito' element={<Carrito/>}/>
           </Routes>
-
-
-
-
-
-           
-   
-    
       </main>
       
 
@@ -33,8 +27,3 @@ export const Main = () => {
 
 export default Main
 
-//<div className = "objeto">
-  //        <img src="img/carrito.png"></img>
-
-//</div>            
-//<Route path="productos/:id" element={<DetalleProducto/>}/>
